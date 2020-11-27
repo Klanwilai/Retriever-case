@@ -1,0 +1,79 @@
+:root {
+  --main-color: burlywood;
+  --main-accent-color: blanchedalmond;
+  --text-color: rgb(18, 17, 27);
+  --active-color: royalblue;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  color: var(--text-color);
+  border: 16px solid var(--main-accent-color);
+  border-top: none;
+  border-bottom: none;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  padding-top: 32px;
+}
+
+form {
+  width: max-content;
+  margin: 32px auto 48px;
+}
+
+input {
+  background: transparent;
+  border: 3px solid var(--text-color);
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 8px 16px;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--active-color);
+}
+
+h1, h2, h3, h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.preamble {
+  padding-top: 16px;
+}
+
+.tweets {
+  width: 100%;
+  max-width: 800px;
+}
+
+.tweets ol {
+  list-style: none;
+}
+
+.tweets li:not(:last-child) {
+  margin-bottom: 32px;
+}
